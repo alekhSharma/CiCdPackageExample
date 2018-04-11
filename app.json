@@ -1,0 +1,34 @@
+{
+  "name": "salesforce-dx-pipeline-sample",
+  "version": "0.0.1",
+  "description": "Test application for the salesforce-dx-buildpack",
+  "repository": "https://github.com/alekhSharma/CiCdExample.git",
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "buildpacks": [{
+    "url": "https://github.com/wadewegner/salesforce-cli-buildpack#v3"
+  }, {
+    "url": "https://github.com/wadewegner/salesforce-dx-buildpack#v3"
+  }],
+  "env": {
+    "DEV_HUB_SFDX_AUTH_URL": {
+      "required": true
+    },
+    "SFDX_BUILDPACK_DEBUG" : {
+      "required": true
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+       
+      }
+    }
+  }
+}
