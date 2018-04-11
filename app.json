@@ -17,9 +17,7 @@
     "url": "https://github.com/wadewegner/salesforce-dx-buildpack#v3"
   }],
   "env": {
-    "DEV_HUB_SFDX_AUTH_URL": {
-      "required": true
-    },
+   
     "SFDX_BUILDPACK_DEBUG" : {
       "required": true
     }
