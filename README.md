@@ -1,4 +1,4 @@
-# SFDX  App by Alekh
+# SFDX  CI/CD by Alekh
 
 ## Dev, Build and Test
 
