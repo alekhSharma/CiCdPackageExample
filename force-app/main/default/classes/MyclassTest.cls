@@ -3,7 +3,8 @@ global with sharing class MyclassTest {
         system.debug('I have changest this class');
         system.debug('I have changes the class again');
 
-        System.debug('I now change from vscode');
+        System.debug('I now change vscode');   
+
 
     }
 }
