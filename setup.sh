@@ -92,7 +92,7 @@ heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_PROD_APP_NAME
 
 # Setup sfdxUrl's for auth
 
-devHubSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861M6dhd2BtI26ytTSARVNSWd6K9FgJxCkq4Nc8BLUF5zjhRto3rNnS7e.o3r1Yr64KFRNUxZXHhvHihzYp@fun-connect-6721-dev-ed.cs57.my.salesforce.com"
+devHubSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzYy3rS_5w_702aXD3lupqOMDr8sBN3OoXVr0RXaG9jaw.vPDViuZk0kBQJH9bB4ENMmlzI@fighter-serenity-26237.my.salesforce.com"
 heroku config:set SFDX_DEV_HUB_AUTH_URL=$devHubSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
 devSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861M6dhd2BtI26ytTSARVNSWd6K9FgJxCkq4Nc8BLUF5zjhRto3rNnS7e.o3r1Yr64KFRNUxZXHhvHihzYp@fun-connect-6721-dev-ed.cs57.my.salesforce.com"
