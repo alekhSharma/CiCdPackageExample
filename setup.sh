@@ -25,7 +25,7 @@ HEROKU_STAGING_APP_NAME="staging$TICKS"
 HEROKU_PROD_APP_NAME="prod$TICKS"
 
 # Pipeline
-HEROKU_PIPELINE_NAME="pipeline"
+HEROKU_PIPELINE_NAME="pipelineskms"
 
 # Usernames or aliases of the orgs you're using
 DEV_HUB_USERNAME="huborg"
@@ -34,10 +34,10 @@ STAGING_USERNAME="StagingOg"
 PROD_USERNAME="ProdOrg"
 
 # Repository with your code
-GITHUB_REPO="wadewegner/salesforce-dx-pipeline-sample"
+GITHUB_REPO="https://github.com/alekhSharma/CiCdPackageExample"
 
 # Your package name
-PACKAGE_NAME="PipelineSamplePackage2"
+PACKAGE_NAME="Packageskms"
 
 ### Setup script
 
@@ -92,16 +92,16 @@ heroku config:set SFDX_BUILDPACK_DEBUG=true -a $HEROKU_PROD_APP_NAME
 
 # Setup sfdxUrl's for auth
 
-devHubSfdxAuthUrl="https://fighter-serenity-26237.my.salesforce.com"
+devHubSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep8613hy0tHCYdhzYy3rS_5w_702aXD3lupqOMDr8sBN3OoXVr0RXaG9jaw.vPDViuZk0kBQJH9bB4ENMmlzI@fighter-serenity-26237.my.salesforce.com"
 heroku config:set SFDX_DEV_HUB_AUTH_URL=$devHubSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-devSfdxAuthUrl="https://fun-connect-6721-dev-ed.cs57.my.salesforce.com"
+devSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861M6dhd2BtI26ytTSARVNSWd6K9FgJxCkq4Nc8BLUF5zjhRto3rNnS7e.o3r1Yr64KFRNUxZXHhvHihzYp@fun-connect-6721-dev-ed.cs57.my.salesforce.com"
 heroku config:set SFDX_AUTH_URL=$devSfdxAuthUrl -a $HEROKU_DEV_APP_NAME
 
-stagingSfdxAuthUrl="https://ruby-business-5573-dev-ed.cs31.my.salesforce.com"
+stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861hkUriVVOXT4WX2lEqMmL8MyQu8h0JoaD4NISTocPOCN7yqdvSRpnQ.x6lwzlRfi4adgG92uQQ.zIAy80@ruby-business-5573-dev-ed.cs31.my.salesforce.com"
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_STAGING_APP_NAME
 
-stagingSfdxAuthUrl="https://agility-ruby-4335-dev-ed.cs6.my.salesforce.com"
+stagingSfdxAuthUrl="force://SalesforceDevelopmentExperience:1384510088588713504:5Aep861Py1mmUCbH64cmgToAkpjVHTX_.RRdGXUGsmYsREER6uRZCi1XgVkDg5L8461Pdr4rsIj9NlMlJV2puuK@agility-ruby-4335-dev-ed.cs6.my.salesforce.com"
 heroku config:set SFDX_AUTH_URL=$stagingSfdxAuthUrl -a $HEROKU_PROD_APP_NAME
 
 # Add buildpacks to apps
